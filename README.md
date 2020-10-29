@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Learn Graphs
+
+This is an interactive visualization experiment to faciliate learning of
+group theory.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
