@@ -11,8 +11,13 @@ class App extends React.Component {
       <div className="App">
         <header className="App-header">Learn Graphs</header>
         <section className="Main">
+          <div>
+            <p>Graphs are not that hard to understand.</p>
+          </div>
           <div className="canvasContainer">
             <ForceGraph2D
+              height="1000"
+              width="800"
               graphData={data}
               nodeLabel="id"
               linkWidth="2"

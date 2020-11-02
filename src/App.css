@@ -40,8 +40,9 @@
     transform: rotate(360deg);
   }
 }
-/*
-canvas {
-  height: 800px;
-  width: 600px;
-} */
+
+.canvasContainer {
+  height: 1000px;
+  width: 800px;
+  border: 1px solid #000;
+}

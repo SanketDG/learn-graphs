@@ -1,54 +1,34 @@
 {
   "nodes": [
     {
-      "id": 1,
-      "name": "Andy",
-      "gender": "male"
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Betty",
-      "gender": "female"
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Cate",
-      "gender": "female"
+      "id": 3
     },
     {
-      "id": 4,
-      "name": "Dave",
-      "gender": "male"
+      "id": 4
     },
     {
-      "id": 5,
-      "name": "Ellen",
-      "gender": "female"
+      "id": 5
     },
     {
-      "id": 6,
-      "name": "Fiona",
-      "gender": "female"
+      "id": 6
     },
     {
-      "id": 7,
-      "name": "Garry",
-      "gender": "male"
+      "id": 7
     },
     {
-      "id": 8,
-      "name": "Holly",
-      "gender": "female"
+      "id": 8
     },
     {
-      "id": 9,
-      "name": "Iris",
-      "gender": "female"
+      "id": 9
     },
     {
-      "id": 10,
-      "name": "Jane",
-      "gender": "female"
+      "id": 10
     }
   ],
   "links": [
