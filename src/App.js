@@ -1,27 +1,39 @@
 import React from "react";
 import data from "./data.json";
-import { ForceGraph } from "./ForceGraph";
+import { ForceGraph2D } from "react-force-graph";
 import "./App.css";
 
-function App() {
-  const nodeHoverTooltip = React.useCallback((node) => {
-    return `<div>${node.name}</div>`;
-  }, []);
+class App extends React.Component {
+  componentDidMount() {}
 
-  console.log(data.links);
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">Learn Graphs</header>
+        <section className="Main">
+          <div className="canvasContainer">
+            <ForceGraph2D
+              graphData={data}
+              nodeLabel="id"
+              linkWidth="2"
+              nodeCanvasObject={({ id, x, y }, ctx) => {
+                ctx.fillStyle = "#000";
 
-  return (
-    <div className="App">
-      <header className="App-header">Learn Graphs</header>
-      <section className="Main">
-        <ForceGraph
-          linksData={data.links}
-          nodesData={data.nodes}
-          nodeHoverTooltip={nodeHoverTooltip}
-        />
-      </section>
-    </div>
-  );
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, 2 * Math.PI, false);
+                ctx.fill();
+                ctx.fillStyle = "#fff";
+                ctx.font = "6px Sans-Serif";
+                ctx.textAlign = "center";
+                ctx.textBaseline = "middle";
+                ctx.fillText(id, x, y);
+              }}
+            />
+          </div>
+        </section>
+      </div>
+    );
+  }
 }
 
 export default App;

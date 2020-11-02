@@ -13,9 +13,13 @@
   }
 }
 
+.Main {
+  display: grid;
+  grid-template-columns: 55% 45%;
+}
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,3 +40,8 @@
     transform: rotate(360deg);
   }
 }
+/*
+canvas {
+  height: 800px;
+  width: 600px;
+} */
